@@ -18,6 +18,7 @@
     "html-pdf": "^3.0.1",
     "jimp": "^0.16.1",
     "mongoose": "^5.13.4",
+    "parse-bmfont-xml": "^1.1.4",
     "pdf-to-base64": "^1.0.3"
   }
 }
