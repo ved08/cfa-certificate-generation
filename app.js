@@ -45,7 +45,7 @@ const processImage = async (name, res, filename, modifiedFileName) => {
             const font = await Jimp.loadFont(path.join(__dirname, "segoepr/segoepr.fnt"));
             image.print(font, 440, 330, name)
             await image.writeAsync(path.join(__dirname, `/certs/${modifiedFileName}.jpg`))
-            res.end(`http://localhost:5000/certificate/${filename}/${uid}`)
+            res.end(`https://cfa-certificate-generator.herokuapp.com/certificate/${filename}/${uid}`)
         })
         .catch(err => console.log(err));
 
